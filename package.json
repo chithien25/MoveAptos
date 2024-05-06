@@ -1,0 +1,32 @@
+{
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon index.js",
+    "build": "tsc",
+    "start": "node index.js",
+    "test": "jest",
+    "lint": "eslint . --ext .ts",
+    "format": "prettier --write .",
+    "prepare": "husky install",
+    "precommit": "lint-staged",
+    "postinstall": "husky install",
+    "test-sample": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "source-map-support": "^0.5.21",
+    "puppeteer": "21.6.1",
+    "env-cmd": "^10.1.0",
+    "@nestjs/cli": "^10.0.0",
+    "morgan": "^1.10.0",
+    "cache-manager-redis-store": "2",
+    "@pontem/liquidswap-sdk": "^0.7.0",
+    "ts-loader": "^9.4.3",
+    "ts-node": "^10.9.1",
+    "cheerio": "1.0.0-rc.12",
+    "@aptos-labs/ts-sdk": "^1.9.1"
+  }
+}
